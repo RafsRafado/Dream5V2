@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI-5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wave">
+  <h1 class="animate-top">CI-5</h1>
+  <div class="divimagem1">
+    <img src="imagens/imagem5.png" alt="" class="imagem1">
+  </div>
+  <div class="divtexto animate-top" style="width:40%;min-width: 300px;text-align:center;margin-left:auto;margin-right: auto;">
+    <span class="texto">
+      A Nova Caixa de Pagamento Automático CI-5, é uma solução dinâmica e elimina a necessidade de manuseamento de dinheiro
+       no ponto de venda. Quando integrado com o seu sistema POS existente,  a CI-5 automatiza com segurança a manipulação 
+       de dinheiro para pagamento, minimizando o risco de erros, enquanto aumenta a produtividade dos colaboradores e um
+        melhor atendimento ao cliente. Projetada especificamente para ambientes de varejo, a CI-5 foi criada com estilo
+         simples para facilitar a integração em vários formatos de lojas.
+    </span>
+  </div>
+    <div class="imgback animate-left">
+      <img src="imagens/CI-5.png" alt="" class="imgci5">
+      <div class="divtexto textresponsive">
+        <span class="texto">Este dispositivo é altamente seguro e permite que você ofereça potencialmente opções de autoatendimento em
+          qualquer lugar em que  precise de receber dinheiro. 
+          A segurança é bastante aprimorada porque não há necessidade de tocar ou contar manualmente o dinheiro.
+           A CI-5 também garante que quaisquer notas suspeitas sejam reconhecidas e rejeitadas.</span>
+        </div>
+    </div>
+</div>
+<div class="wave2">
+<div class="textbloco2 animate-fading"><h2>Porquê escolher a CI-5?</h2>
+  <div class="divtexto" style="width:40%;min-width:300px;text-align:center;margin:auto;margin-bottom:50px;">
+<span class="texto">A CI-5 automatiza praticamente todas as etapas dos processos de manuseio de dinheiro no ponto-de-venda da sua loja.
+   Desde a contagem de dinheiro oferecida pelos clientes, até a validação das moedas e notas, dispensando a movimentação de dinheiro na loja e 
+   preparando para transferência para o banco. </span>
+</div>
+<div class="botoesh animate-top">
+  <a style="float:left;margin-left:auto;" href="https://www.dreamid.pt/contactos" class="btn effect01"><span>Contacte-Nos</span></a>
+</div>
+<div class="video">
+  <iframe height="220" width="400" src="https://www.youtube.com/embed/2w5pNK6wtXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe height="220" width="400" src="https://www.youtube.com/embed/bcYCZPN50zY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div class="animar">
+  <h2 class="">Dimensões</h2>
+  <div class="divtexto" style="margin-bottom: 25px;">
+  <table align="center" border>
+    <thead>
+    <tr>
+    <th></th>
+    <th class="textot">RECICLADOR DE NOTAS</th>
+    <th class="textot">RECICLADOR DE MOEDAS</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="textot"><b>Medida (L × A × P)</b></td>
+    <td class="textot">200 x 590 x 300mm</td>
+    <td class="textot">320 x 590 x 300mm</td>
+    </tr>
+    <tr>
+    <td class="textot"><b>PESO</b></td>
+    <td class="textot">30 kg</td>
+    <td class="textot">35 kg</td>
+    </tr>
+    <tr>
+    <td class="textot"><b>Número de módulos recirculadores</b></td>
+    <td class="textot">3 recicladores Configuração livre</td>
+    <td class="textot">8 recicladores Configuração livre</td>
+    </tr>  
+    <tr>
+      <td class="textot"><b>Capacidade notas/moedas</b></td>
+      <td class="textot">300 notas</td>
+      <td class="textot">Depende da configuração do módulo reciclador</td>
+    </tr>   
+    </tbody>
+    </table>
+  </div>
+</div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+      document.addEventListener("scroll", function(event) {
+          const classesanim = document.getElementsByClassName("animar");
+          const windowOffsetTop = window.innerHeight + window.scrollY;
+  
+          Array.prototype.forEach.call(classesanim, (classeanim) => {
+              const classeanimOffsetTop = classeanim.offsetTop;
+  
+              if (windowOffsetTop >= classeanimOffsetTop) {
+                  addClass(classeanim, "animate-fading");
+              }
+          });
+      });
+  });
+  
+  function addClass(element, className) {
+      const arrayClasses = element.className.split(" ");
+      if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+      }
+  }
+      </script>
+</html>
+
